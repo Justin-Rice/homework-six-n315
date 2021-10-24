@@ -160,6 +160,10 @@ nav {
   display: none;
 }
 
+.tablet-footer {
+  display: none;
+}
+
 footer {
   width: 80vl;
   font-family: Lato-It;
@@ -210,33 +214,81 @@ footer .social svg {
 
 @media screen and (max-width: 768px) {
   footer {
-    position: fixed;
-    bottom: 25px;
+    display: none;
+  }
+
+  .tablet-footer {
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    bottom: 100px;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100vl;
+    font-family: Lato-It;
     font-size: 10px;
+    color: #393939;
   }
-  footer .copyright {
-    padding-right: 0px;
-    width: 180px;
+  .tablet-footer .copyright {
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    padding-bottom: 5px;
+    width: 160px;
+    word-spacing: 1px;
+    margin-right: 5px;
   }
-  footer .copyright p {
-    width: 180px;
-    padding-right: 0px;
+  .tablet-footer .middle {
+    width: 540px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: none;
+        flex-wrap: none;
   }
-  footer .middle {
-    padding-right: 0px;
-    width: 400px;
-    position: fixed;
-    margin-left: 160px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  .tablet-footer .middle div {
+    min-margin-left: 5px;
+    min-margin-right: 5px;
   }
-  footer .social {
-    margin-left: 0;
+  .tablet-footer .middle div #what {
+    text-align: left;
+  }
+  .tablet-footer .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .tablet-footer .social svg {
+    height: 12px;
+    padding-left: 20px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 565px) {
+  .tablet-footer {
+    display: none;
+  }
+
   footer {
     display: none;
     font-size: 10px;
@@ -636,6 +688,9 @@ footer .social svg {
 }
 
 @media screen and (max-width: 768px) {
+  .login {
+    height: 1060px;
+  }
   .login .form__flex {
     height: 850px;
     width: 300px;
@@ -647,9 +702,9 @@ footer .social svg {
         justify-content: space-around;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 565px) {
   .login {
-    height: 1000px;
+    height: 1100px;
   }
   .login .form__flex {
     height: 750px;

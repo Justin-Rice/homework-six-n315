@@ -1,6 +1,9 @@
 .mobile-footer{
     display: none;
 }
+.tablet-footer{
+    display: none;
+}
 footer{
     width: 80vl;    
     font-family: Lato-It;
@@ -66,49 +69,83 @@ footer{
 
 @media screen and (max-width: 768px) {
     footer{
-        position: fixed;
-        bottom: 25px;
-        
-        font-size: 10px;
-        
-           //justify-content: space-evenly;
-            .copyright{
-                padding-right: 0px;
-                width: 180px;
-
-                
-                p{
-                    width: 180px;
-                    //background-color: royalblue;
-                    padding-right: 0px;
-                }
-
-            }
-            .middle{
-                padding-right:0px;
-                width: 400px;
-                position: fixed;
-               // margin-right: 40px;
-                margin-left: 160px;
-                flex-direction: row;
-                div{
-                    //width:120px;
-                    //height: 10px;
-                    //background-color: salmon;
-                }
-
-
-            }
-            .social{
-                margin-left: 0;
-
-            }
-        
+     display: none;   
     }
+
+     .tablet-footer{
+        padding-left: 50px;
+        padding-right: 50px;
+
+        position: relative;
+        bottom: 100px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100vl;    
+        font-family: Lato-It;
+        font-size: 10px;
+        color: #393939;
+       // background-color: $red;
+        
+            // 
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-between;
+           
+            .copyright{
+                margin: 0 auto;
+                position: relative;
+                top: 10px;
+                padding-bottom: 5px;
+                width: 160px;
+                //background-color: aqua;
+                word-spacing: 1px;
+                margin-right: 5px;
+            }
+        
+        .middle{
+           // max-width: 450px;
+           width: 540px;
+            margin: 0 auto;
+            //margin-left: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;   
+            flex-wrap: none; 
+           // background-color: green;        
+            div{
+               // width: 30px;
+               //width: 90px;
+              //background-color: antiquewhite;
+              min-margin-left: 5px;
+              min-margin-right: 5px;
+                #what{
+                    text-align: left;
+                }
+            }
+        }
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+           // width: 50px;
+            svg{
+                height: 12px;
+                padding-left: 20px;
+
+            }
+        }
+    }
+        
+    
 
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 565px) {
+    .tablet-footer{
+        display: none;
+    }
     footer{
         display: none;
         font-size: 10px;

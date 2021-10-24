@@ -103,6 +103,7 @@
 
 @media screen and (max-width: 768px) {
     .login{
+        height: 1060px;
         .form__flex{
             height: 850px;
             width: 300px;
@@ -113,9 +114,9 @@
 
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 565px) {
     .login{
-        height: 1000px;
+        height: 1100px;
         .form__flex{
             height: 750px;
             width: 300px;
